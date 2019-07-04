@@ -6,8 +6,8 @@ resquest(1);
 const nextBtn = '<button type="button" id="sub" class="next animated bounceInLeft">Submit</button>';
 function resquest(c){
 	var myar = new Array();
-	$.getJSON("config/quizdb.json",function(data){
-		mydata = data;
+	$.getJSON("config/quiz2db.php",function(data){
+		mydata = JSON.parse(data);
 	});
 	setter(c);
 }
