@@ -8,6 +8,7 @@ function resquest(c){
 	var myar = new Array();
 	$.getJSON("config/quizdb.php",function(data){
 		mydata = JSON.parse(data);
+                console.log(mydata);
 	});
 	setter(c);
 }
