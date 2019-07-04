@@ -1,4 +1,4 @@
-[ 
+ {
 	"result" : [
 {"id":"1","movie_id":"1","question":"\"You know Nothing,Jon Snow\" was said by?","option1":"Gilly","option2":"Tyrion","option3":"SamTarly","answer":"Ygritte","level":"easy"},
 {"id":"2","movie_id":"1","question":"Who killed Lord Bolton","option1":"Jon Snow","option2":"Arya Stark","option3":"Rob Stark","answer":"Ramsey Bolton","level":"easy"},
@@ -144,4 +144,4 @@
 {"id":"143","movie_id":"5","question":"What was the name of Madara's jutsu?","option1":"End of Suffering","option2":"Endless Red Moon","option3":"Reflections in Red","answer":"Eye of the moon","level":"medium"},
 {"id":"144","movie_id":"5","question":"Who is the last person Naruto battled in Shippuden?","option1":"Kurama","option2":"Kaguya","option3":"Madara","answer":"Sasuke","level":"easy"}
 ]
-]
+}
