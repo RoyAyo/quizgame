@@ -8,10 +8,12 @@ function resquest(c){
 	var myar = new Array();
 	$.getJSON("config/quizdb.json",function(data){
 		mydata = $.extend({},data);
+		console.log(mydata)
 	});
 	setter(c);
 }
 function setter(x,check){
+	console.log(mydata)
 	let r = mydata.result.length;
 	let q = Math.floor(Math.random() * r);
 	movname = mydata.result[q].movie.replace(/_/g," ");
