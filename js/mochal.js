@@ -7,9 +7,9 @@ const nextBtn = '<button type="button" id="sub" class="next animated bounceInLef
 function resquest(c){
 	var myar = new Array();
 	$.getJSON("config/quizdb.json",function(data){
-		mydata = data;
+		console.log(data);
 	});
-	setter(c);
+	//setter(c);
 }
 function setter(x,check){
 	let r = mydata.result.length;
