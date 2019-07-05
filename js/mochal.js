@@ -6,7 +6,6 @@ myar = new Array();
 resquest(1);
 const nextBtn = '<button type="button" id="sub" class="next animated bounceInLeft">Submit</button>';
 function setter(x,check){
-	console.log(mydata)
 	let r = mydata.result.length;
 	let q = Math.floor(Math.random() * r);
 	movname = mydata.result[q].movie.replace(/_/g," ");
@@ -59,8 +58,8 @@ function resquest(c){
 	var myar = new Array();
 	$.getJSON("config/quizdb.json",function(data){
 		mydata = $.extend({},data);
+		setter(c);
 	});
-	setter(c);
 }
 function shuffler(item){
 	let arr=item.split("");

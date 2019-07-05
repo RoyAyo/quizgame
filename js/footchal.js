@@ -8,8 +8,8 @@ function resquest(c){
 	var myar = new Array();
 	$.getJSON("config/quiz2db.php",function(data){
 		mydata = $.extend({},data);
+		setter(c);
 	});
-	setter(c);
 }
 function setter(x,check){
 	let r = mydata.result.length;
