@@ -1,17 +1,10 @@
 var questions_asked = 1;
 var correct = 0;
-var mydata,prev_ans,mid,time,level,valid,movname,total_ans,sec = 60;
+var mydata;
+var prev_ans,mid,time,level,valid,movname,total_ans,sec = 60;
 myar = new Array();
 resquest(1);
 const nextBtn = '<button type="button" id="sub" class="next animated bounceInLeft">Submit</button>';
-function resquest(c){
-	var myar = new Array();
-	$.getJSON("config/quizdb.json",function(data){
-		mydata = $.extend({},data);
-		console.log(mydata)
-	});
-	setter(c);
-}
 function setter(x,check){
 	console.log(mydata)
 	let r = mydata.result.length;
@@ -61,6 +54,13 @@ function setter(x,check){
 		$("#div2").remove("")
 		createradios(q);
 	}
+}
+function resquest(c){
+	var myar = new Array();
+	$.getJSON("config/quizdb.json",function(data){
+		mydata = $.extend({},data);
+	});
+	setter(c);
 }
 function shuffler(item){
 	let arr=item.split("");
