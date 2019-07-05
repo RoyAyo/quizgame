@@ -7,14 +7,14 @@ const nextBtn = '<button type="button" id="sub" class="next animated bounceInLef
 function resquest(c){
 	var myar = new Array();
 	$.getJSON("config/quiz2db.php",function(data){
-		mydata = JSON.parse(data);
+		mydata = $.extend({},data);
 	});
 	setter(c);
 }
 function setter(x,check){
 	let r = mydata.result.length;
 	let q = Math.floor(Math.random() * r);
-	movname = mydata.result[q].movie.replace(/_/g," ");
+	movname = mydata.result[q].team.replace(/_/g," ");
 	let ans= $("input[type='radio']:checked").val();
 	if (myar.includes(q)) {
 		return setter(x);
