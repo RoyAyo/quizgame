@@ -120,5 +120,5 @@ counter()
 function gameover(){
 	clearInterval(time);
 	$('#timer').hide();
-	$('#div2').html(`you garnered ${correct} points`);
+	$('#div2').html(`your total is = ${correct} points`);
 }
