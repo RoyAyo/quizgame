@@ -98,8 +98,8 @@ function createradios(q){
 	$('<label for="opt2" class="btnQ"><span>'+ mydata.result[q].option2 + '</span></label>').insertAfter("#opt2");
 	$('<input type="radio" onchange="setter(2,\'check\')" name="quest" id="opt3" class="btnQ" value="'+mydata.result[q].option3+'">').appendTo("#op"+p[2]);
 	$('<label for="opt3" class="btnQ"><span>'+ mydata.result[q].option3 + '</span></label>').insertAfter("#opt3");
-	$('<input type="radio" name="quest" id="opt4" class="btnQ" value="'+mydata.result[q].answer+'">').appendTo("#op"+p[03]);
-	$('<label for="opt4" onchange="setter(2,\'check\')" class="btnQ"><span>'+ mydata.result[q].answer + '</span></label>').insertAfter("#opt4");
+	$('<input type="radio" onchange="setter(2,\'check\')"  name="quest" id="opt4" class="btnQ" value="'+mydata.result[q].answer+'">').appendTo("#op"+p[03]);
+	$('<label for="opt4" class="btnQ"><span>'+ mydata.result[q].answer + '</span></label>').insertAfter("#opt4");
 	$('<div class="button-space"><button type="button" class="skip animated bounceInLeft" onclick="setter(2,\'skip\')">Skip</button></div>').appendTo("#div2");
 	$('#div2').addClass("animated fadeInDown")
 	prev_ans = mydata.result[q].answer;
