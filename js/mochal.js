@@ -93,8 +93,8 @@ function createradios(q){
 	$('<span id="op2"></span>').appendTo('.content');
 	$('<span id="op3"></span>').appendTo('.content');
 	$('<span id="op4"></span>').appendTo('.content');
-	$('<input type="radio" name="quest" id="opt1" class="btnQ" value="'+mydata.result[q].option1+'" >').appendTo("#op"+p[0]);
-	$('<label for="opt1" class="btnQ"><span>'+ mydata.result[q].option1 + '</span></label>').insertAfter("#opt1");
+	$('<input type="radio"  name="quest" id="opt1" class="btnQ" value="'+mydata.result[q].option1+'" >').appendTo("#op"+p[0]);
+	$('<label for="opt1"  onchange="setter(2,\'check\')" class="btnQ"><span>'+ mydata.result[q].option1 + '</span></label>').insertAfter("#opt1");
 	$('<input type="radio" name="quest" id="opt2" class="btnQ" value="'+mydata.result[q].option2+'">').appendTo("#op"+p[1]);
 	$('<label for="opt2" class="btnQ"><span>'+ mydata.result[q].option2 + '</span></label>').insertAfter("#opt2");
 	$('<input type="radio" name="quest" id="opt3" class="btnQ" value="'+mydata.result[q].option3+'">').appendTo("#op"+p[2]);
