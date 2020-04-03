@@ -25,13 +25,13 @@ function setter(x,check){
 					case "medium":
 						correct+=15;
 						clearInterval(time)
-						sec+=4;
+						sec+=6;
 						counter()
 						break;
 					case "hard":
 						correct+=20;
 						clearInterval(time)
-						sec+=7;
+						sec+=10;
 						counter();
 						break;
 				}
