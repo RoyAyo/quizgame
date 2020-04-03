@@ -42,7 +42,7 @@ function setter(x,check){
 						correct-=5;
 						break;
 					case "medium":
-						correct-=5;
+						correct-=7;
 						break;
 					case "hard":
 						correct-=10;
