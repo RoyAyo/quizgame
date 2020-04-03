@@ -256,6 +256,4 @@
 {"movie":"Titanic","question":"Titanic wreck happened on a ","option1":"Boat","option2":"Airplane","option3":"Bus","answer":"Ship","level":"easy"},
 {"movie":"Titanic","question":"Titanics main lovers were","option1":"Romeo and Juliet","option2":"Jack and Jill","option3":"Bill and Kate","answer":"Jack and Rose","level":"easy"},
 {"movie":"Rick_And_Morty","question":"How many seasons does this series currently have?","option1":"2","option2":"1","option3":"3","answer":"4","level":"medium"}
-]
-}
 ]}
